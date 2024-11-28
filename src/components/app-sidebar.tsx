@@ -13,26 +13,30 @@ import {
 	SidebarMenuSubButton,
 	SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
+import { useAtomValue } from "jotai";
+import { selectedYear } from "@/lib/global-state";
+import { VersionSwitcher } from "./version-swithcer";
 
 // This is sample data.
 const data = {
+	versions: ["2025"],
 	navMain: [
 		{
-			title: "Getting Started",
+			title: "Mulai",
 			url: "#",
 			items: [
 				{
-					title: "Installation",
+					title: "Referensi",
 					url: "#",
 				},
 				{
-					title: "Project Structure",
+					title: "Motivasi",
 					url: "#",
 				},
 			],
 		},
 		{
-			title: "Building Your Application",
+			title: "Honor",
 			url: "#",
 			items: [
 				{
@@ -48,42 +52,6 @@ const data = {
 					title: "Rendering",
 					url: "#",
 				},
-				{
-					title: "Caching",
-					url: "#",
-				},
-				{
-					title: "Styling",
-					url: "#",
-				},
-				{
-					title: "Optimizing",
-					url: "#",
-				},
-				{
-					title: "Configuring",
-					url: "#",
-				},
-				{
-					title: "Testing",
-					url: "#",
-				},
-				{
-					title: "Authentication",
-					url: "#",
-				},
-				{
-					title: "Deploying",
-					url: "#",
-				},
-				{
-					title: "Upgrading",
-					url: "#",
-				},
-				{
-					title: "Examples",
-					url: "#",
-				},
 			],
 		},
 		{
@@ -92,26 +60,6 @@ const data = {
 			items: [
 				{
 					title: "Components",
-					url: "#",
-				},
-				{
-					title: "File Conventions",
-					url: "#",
-				},
-				{
-					title: "Functions",
-					url: "#",
-				},
-				{
-					title: "next.config.js Options",
-					url: "#",
-				},
-				{
-					title: "CLI",
-					url: "#",
-				},
-				{
-					title: "Edge Runtime",
 					url: "#",
 				},
 			],
@@ -126,18 +74,6 @@ const data = {
 				},
 				{
 					title: "Fast Refresh",
-					url: "#",
-				},
-				{
-					title: "Next.js Compiler",
-					url: "#",
-				},
-				{
-					title: "Supported Browsers",
-					url: "#",
-				},
-				{
-					title: "Turbopack",
 					url: "#",
 				},
 			],
@@ -156,10 +92,16 @@ const data = {
 };
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+	// const year = useAtomValue(selectedYear)
+	const year = 2025;
 	return (
 		<Sidebar variant="floating" {...props}>
 			<SidebarHeader>
-				<SidebarMenu>
+				<VersionSwitcher
+					versions={data.versions}
+					defaultVersion={data.versions[0]}
+				/>
+				{/* <SidebarMenu>
 					<SidebarMenuItem>
 						<SidebarMenuButton size="lg" asChild>
 							<a href="#">
@@ -168,12 +110,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 								</div>
 								<div className="flex flex-col gap-0.5 leading-none">
 									<span className="font-semibold">Cari SBM</span>
-									<span className="">v1.0.0</span>
+									<span className="">{year}</span>
 								</div>
 							</a>
 						</SidebarMenuButton>
 					</SidebarMenuItem>
-				</SidebarMenu>
+				</SidebarMenu> */}
 			</SidebarHeader>
 			<SidebarContent>
 				<SidebarGroup>

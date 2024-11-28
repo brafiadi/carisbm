@@ -59,12 +59,12 @@ export default function RootLayout({
 								<BreadcrumbList>
 									<BreadcrumbItem className="hidden md:block">
 										<BreadcrumbLink href="#">
-											Building Your Application
+											Standar Biaya Masukan
 										</BreadcrumbLink>
 									</BreadcrumbItem>
 									<BreadcrumbSeparator className="hidden md:block" />
 									<BreadcrumbItem>
-										<BreadcrumbPage>Data Fetching</BreadcrumbPage>
+										<BreadcrumbPage>Honor</BreadcrumbPage>
 									</BreadcrumbItem>
 								</BreadcrumbList>
 							</Breadcrumb>
