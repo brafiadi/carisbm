@@ -16,74 +16,45 @@ import {
 import { useAtomValue } from "jotai";
 import { selectedYear } from "@/lib/global-state";
 import { VersionSwitcher } from "./version-swithcer";
+import Link from "next/link";
 
 // This is sample data.
 const data = {
 	versions: ["2025"],
 	navMain: [
 		{
-			title: "Mulai",
-			url: "#",
+			title: "Beranda",
+			url: "/",
+			isActive: true,
+		},
+		{
+			title: "Honorarium",
+			url: "honorarium",
 			items: [
 				{
-					title: "Referensi",
+					title: "Penanggung Jawab Pengelola Keuangan",
 					url: "#",
 				},
 				{
-					title: "Motivasi",
+					title: "Pengadaan Barang/Jasa",
 					url: "#",
 				},
 			],
 		},
 		{
-			title: "Honor",
+			title: "Perjalanan Dinas",
 			url: "#",
 			items: [
 				{
-					title: "Routing",
+					title: "Uang Harian Dalam Negeri",
 					url: "#",
 				},
 				{
-					title: "Data Fetching",
-					url: "#",
-					isActive: true,
-				},
-				{
-					title: "Rendering",
-					url: "#",
-				},
-			],
-		},
-		{
-			title: "API Reference",
-			url: "#",
-			items: [
-				{
-					title: "Components",
-					url: "#",
-				},
-			],
-		},
-		{
-			title: "Architecture",
-			url: "#",
-			items: [
-				{
-					title: "Accessibility",
+					title: "Uang Harian Luar Negeri",
 					url: "#",
 				},
 				{
-					title: "Fast Refresh",
-					url: "#",
-				},
-			],
-		},
-		{
-			title: "Community",
-			url: "#",
-			items: [
-				{
-					title: "Contribution Guide",
+					title: "Penginapan Dalam Negeri",
 					url: "#",
 				},
 			],
@@ -123,16 +94,16 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 						{data.navMain.map((item) => (
 							<SidebarMenuItem key={item.title}>
 								<SidebarMenuButton asChild>
-									<a href={item.url} className="font-medium">
+									<Link href={item.url} className="font-medium">
 										{item.title}
-									</a>
+									</Link>
 								</SidebarMenuButton>
 								{item.items?.length ? (
 									<SidebarMenuSub className="ml-0 border-l-0 px-1.5">
 										{item.items.map((item) => (
 											<SidebarMenuSubItem key={item.title}>
 												<SidebarMenuSubButton asChild isActive={item.isActive}>
-													<a href={item.url}>{item.title}</a>
+													<Link href={item.url}>{item.title}</Link>
 												</SidebarMenuSubButton>
 											</SidebarMenuSubItem>
 										))}

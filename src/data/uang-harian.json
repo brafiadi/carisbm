@@ -1,0 +1,306 @@
+[
+	{
+		"no": 1,
+		"provinsi": "ACEH",
+		"satuan": "OH",
+		"luar_kota": 360000,
+		"dalam_kota": 140000,
+		"diklat": 110000
+	},
+	{
+		"no": 2,
+		"provinsi": "SUMATERA UTARA",
+		"satuan": "OH",
+		"luar_kota": 370000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 3,
+		"provinsi": "R I A U",
+		"satuan": "OH",
+		"luar_kota": 370000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 4,
+		"provinsi": "KEPULAUAN RIAU",
+		"satuan": "OH",
+		"luar_kota": 370000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 5,
+		"provinsi": "J A M B I",
+		"satuan": "OH",
+		"luar_kota": 370000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 6,
+		"provinsi": "SUMATERA BARAT",
+		"satuan": "OH",
+		"luar_kota": 380000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 7,
+		"provinsi": "SUMATERA SELATAN",
+		"satuan": "OH",
+		"luar_kota": 380000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 8,
+		"provinsi": "LAMPUNG",
+		"satuan": "OH",
+		"luar_kota": 380000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 9,
+		"provinsi": "BENGKULU",
+		"satuan": "OH",
+		"luar_kota": 380000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 10,
+		"provinsi": "BANGKA BELITUNG",
+		"satuan": "OH",
+		"luar_kota": 410000,
+		"dalam_kota": 160000,
+		"diklat": 120000
+	},
+	{
+		"no": 11,
+		"provinsi": "B A N T E N",
+		"satuan": "OH",
+		"luar_kota": 370000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 12,
+		"provinsi": "JAWA BARAT",
+		"satuan": "OH",
+		"luar_kota": 430000,
+		"dalam_kota": 150000,
+		"diklat": 130000
+	},
+	{
+		"no": 13,
+		"provinsi": "D.K.I. JAKARTA",
+		"satuan": "OH",
+		"luar_kota": 530000,
+		"dalam_kota": 210000,
+		"diklat": 160000
+	},
+	{
+		"no": 14,
+		"provinsi": "JAWA TENGAH",
+		"satuan": "OH",
+		"luar_kota": 370000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 15,
+		"provinsi": "D.I.YOGYAKARTA",
+		"satuan": "OH",
+		"luar_kota": 420000,
+		"dalam_kota": 170000,
+		"diklat": 130000
+	},
+	{
+		"no": 16,
+		"provinsi": "JAWA TIMUR",
+		"satuan": "OH",
+		"luar_kota": 410000,
+		"dalam_kota": 160000,
+		"diklat": 120000
+	},
+	{
+		"no": 17,
+		"provinsi": "B A L I",
+		"satuan": "OH",
+		"luar_kota": 480000,
+		"dalam_kota": 190000,
+		"diklat": 140000
+	},
+	{
+		"no": 18,
+		"provinsi": "NUSA TENGGARA BARAT",
+		"satuan": "OH",
+		"luar_kota": 440000,
+		"dalam_kota": 180000,
+		"diklat": 130000
+	},
+	{
+		"no": 19,
+		"provinsi": "NUSA TENGGARA TIMUR",
+		"satuan": "OH",
+		"luar_kota": 430000,
+		"dalam_kota": 170000,
+		"diklat": 130000
+	},
+	{
+		"no": 20,
+		"provinsi": "KALIMANTAN BARAT",
+		"satuan": "OH",
+		"luar_kota": 390000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 21,
+		"provinsi": "KALIMANTAN TENGAH",
+		"satuan": "OH",
+		"luar_kota": 360000,
+		"dalam_kota": 140000,
+		"diklat": 110000
+	},
+	{
+		"no": 22,
+		"provinsi": "KALIMANTAN SELATAN",
+		"satuan": "OH",
+		"luar_kota": 380000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 23,
+		"provinsi": "KALIMANTAN TIMUR",
+		"satuan": "OH",
+		"luar_kota": 430000,
+		"dalam_kota": 170000,
+		"diklat": 130000
+	},
+	{
+		"no": 24,
+		"provinsi": "KALIMANTAN UTARA",
+		"satuan": "OH",
+		"luar_kota": 430000,
+		"dalam_kota": 170000,
+		"diklat": 130000
+	},
+	{
+		"no": 25,
+		"provinsi": "SULAWESI UTARA",
+		"satuan": "OH",
+		"luar_kota": 370000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 26,
+		"provinsi": "GORONTALO",
+		"satuan": "OH",
+		"luar_kota": 370000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 27,
+		"provinsi": "SULAWESI BARAT",
+		"satuan": "OH",
+		"luar_kota": 410000,
+		"dalam_kota": 160000,
+		"diklat": 120000
+	},
+	{
+		"no": 28,
+		"provinsi": "SULAWESI SELATAN",
+		"satuan": "OH",
+		"luar_kota": 430000,
+		"dalam_kota": 170000,
+		"diklat": 130000
+	},
+	{
+		"no": 29,
+		"provinsi": "SULAWESI TENGGAH",
+		"satuan": "OH",
+		"luar_kota": 370000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 30,
+		"provinsi": "SULAWESI TENGGARA",
+		"satuan": "OH",
+		"luar_kota": 380000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 31,
+		"provinsi": "MALUKU",
+		"satuan": "OH",
+		"luar_kota": 380000,
+		"dalam_kota": 150000,
+		"diklat": 110000
+	},
+	{
+		"no": 32,
+		"provinsi": "MALUKU UTARA",
+		"satuan": "OH",
+		"luar_kota": 430000,
+		"dalam_kota": 170000,
+		"diklat": 130000
+	},
+	{
+		"no": 33,
+		"provinsi": "P A P U A",
+		"satuan": "OH",
+		"luar_kota": 580000,
+		"dalam_kota": 230000,
+		"diklat": 170000
+	},
+	{
+		"no": 34,
+		"provinsi": "PAPUA BARAT",
+		"satuan": "OH",
+		"luar_kota": 480000,
+		"dalam_kota": 190000,
+		"diklat": 140000
+	},
+	{
+		"no": 35,
+		"provinsi": "PAPUA BARAT DAYA",
+		"satuan": "OH",
+		"luar_kota": 480000,
+		"dalam_kota": 190000,
+		"diklat": 140000
+	},
+	{
+		"no": 36,
+		"provinsi": "PAPUA TENGAH",
+		"satuan": "OH",
+		"luar_kota": 580000,
+		"dalam_kota": 230000,
+		"diklat": 170000
+	},
+	{
+		"no": 37,
+		"provinsi": "PAPUA SELATAN",
+		"satuan": "OH",
+		"luar_kota": 580000,
+		"dalam_kota": 230000,
+		"diklat": 170000
+	},
+	{
+		"no": 38,
+		"provinsi": "PAPUA PEGUNUNGAN",
+		"satuan": "OH",
+		"luar_kota": 580000,
+		"dalam_kota": 230000,
+		"diklat": 170000
+	}
+]
