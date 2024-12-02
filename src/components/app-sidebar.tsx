@@ -13,10 +13,10 @@ import {
 	SidebarMenuSubButton,
 	SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
-import { useAtomValue } from "jotai";
 import { selectedYear } from "@/lib/global-state";
-import { VersionSwitcher } from "./version-swithcer";
+import { useAtomValue } from "jotai";
 import Link from "next/link";
+import { VersionSwitcher } from "./version-swithcer";
 
 // This is sample data.
 const data = {
@@ -43,7 +43,7 @@ const data = {
 		},
 		{
 			title: "Perjalanan Dinas",
-			url: "#",
+			url: "perjalanan-dinas",
 			items: [
 				{
 					title: "Uang Harian Dalam Negeri",
@@ -102,7 +102,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 									<SidebarMenuSub className="ml-0 border-l-0 px-1.5">
 										{item.items.map((item) => (
 											<SidebarMenuSubItem key={item.title}>
-												<SidebarMenuSubButton asChild isActive={item.isActive}>
+												<SidebarMenuSubButton
+													asChild
+													// isActive={item.isActive}
+												>
 													<Link href={item.url}>{item.title}</Link>
 												</SidebarMenuSubButton>
 											</SidebarMenuSubItem>

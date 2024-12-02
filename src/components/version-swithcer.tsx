@@ -1,12 +1,12 @@
 "use client";
 
-import * as React from "react";
 import {
 	Check,
 	ChevronsUpDown,
 	GalleryVerticalEnd,
 	Search,
 } from "lucide-react";
+import * as React from "react";
 
 import {
 	DropdownMenu,
