@@ -27,44 +27,66 @@ const data = {
 			url: "/",
 			isActive: true,
 		},
-		{
-			title: "Honorarium",
-			url: "honorarium",
-			items: [
-				{
-					title: "Penanggung Jawab Pengelola Keuangan",
-					url: "#",
-				},
-				{
-					title: "Pengadaan Barang/Jasa",
-					url: "#",
-				},
-			],
-		},
-		{
-			title: "Perjalanan Dinas",
-			url: "perjalanan-dinas",
-			items: [
-				{
-					title: "Uang Harian Dalam Negeri",
-					url: "#",
-				},
-				{
-					title: "Uang Harian Luar Negeri",
-					url: "#",
-				},
-				{
-					title: "Penginapan Dalam Negeri",
-					url: "#",
-				},
-			],
-		},
+		// {
+		// 	title: "Honorarium",
+		// 	url: "honorarium",
+		// 	items: [
+		// 		{
+		// 			title: "Penanggung Jawab Pengelola Keuangan",
+		// 			url: "#",
+		// 		},
+		// 		{
+		// 			title: "Pengadaan Barang/Jasa",
+		// 			url: "#",
+		// 		},
+		// 	],
+		// },
+		// {
+		// 	title: "Perjalanan Dinas",
+		// 	url: "perjalanan-dinas",
+		// 	items: [
+		// 		{
+		// 			title: "Uang Harian Dalam Negeri",
+		// 			url: "#",
+		// 		},
+		// 		{
+		// 			title: "Uang Harian Luar Negeri",
+		// 			url: "#",
+		// 		},
+		// 		{
+		// 			title: "Penginapan Dalam Negeri",
+		// 			url: "#",
+		// 		},
+		// 	],
+		// },
 	],
 };
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+const getSbmMenuData = async () => {
+	const res = await fetch(
+		"https://app.brafiadi.space/api/datasbm/master-data/standar-biaya-masukan",
+	);
+	const data = await res.json();
+	return data?.data;
+};
+
+interface DaftarSBM {
+	id: number;
+	judul: string;
+	jenis: string;
+	link: string;
+}
+
+export async function AppSidebar({
+	...props
+}: React.ComponentProps<typeof Sidebar>) {
 	// const year = useAtomValue(selectedYear)
+
 	const year = 2025;
+	const sbmMenuData = await getSbmMenuData();
+
+	// console.log(sbmMenuData);
+
 	return (
 		<Sidebar variant="floating" {...props}>
 			<SidebarHeader>
@@ -94,11 +116,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 						{data.navMain.map((item) => (
 							<SidebarMenuItem key={item.title}>
 								<SidebarMenuButton asChild>
-									<Link href={item.url} className="font-medium">
+									<Link href={item.url} className="font-medium font-bold">
 										{item.title}
 									</Link>
 								</SidebarMenuButton>
-								{item.items?.length ? (
+								{/* {item.items?.length ? (
 									<SidebarMenuSub className="ml-0 border-l-0 px-1.5">
 										{item.items.map((item) => (
 											<SidebarMenuSubItem key={item.title}>
@@ -111,9 +133,30 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 											</SidebarMenuSubItem>
 										))}
 									</SidebarMenuSub>
-								) : null}
+								) : null} */}
 							</SidebarMenuItem>
 						))}
+
+						<SidebarMenuItem>
+							<SidebarMenuButton asChild>
+								<div className="font-medium font-bold">
+									Daftar Standar Biaya
+								</div>
+							</SidebarMenuButton>
+
+							<SidebarMenuSub className="ml-0 border-l-0 px-1.5">
+								{sbmMenuData?.map((item: DaftarSBM) => (
+									<SidebarMenuSubItem key={item.judul}>
+										<SidebarMenuSubButton
+											asChild
+											// isActive={item.isActive}
+										>
+											<Link href={item.link}>{item.judul}</Link>
+										</SidebarMenuSubButton>
+									</SidebarMenuSubItem>
+								))}
+							</SidebarMenuSub>
+						</SidebarMenuItem>
 					</SidebarMenu>
 				</SidebarGroup>
 			</SidebarContent>

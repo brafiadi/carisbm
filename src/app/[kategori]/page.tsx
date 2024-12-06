@@ -6,7 +6,11 @@ interface PageProps {
 	};
 }
 
-export default function Page({ params }: PageProps) {
-	const title = capitalizeWords(params.kategori);
-	return <>Kategori: {title}</>;
+export default function Page() {
+	// const title = capitalizeWords(params.kategori);
+	return (
+		<div className="text-xl text-gray-600 text-transform: uppercase">
+			coming soon
+		</div>
+	);
 }

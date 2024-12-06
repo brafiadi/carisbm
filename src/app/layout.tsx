@@ -62,18 +62,14 @@ export default function RootLayout({
 									</BreadcrumbItem>
 									<BreadcrumbSeparator className="hidden md:block" />
 									<BreadcrumbItem>
-										<BreadcrumbLink>Honor</BreadcrumbLink>
-									</BreadcrumbItem>
-									<BreadcrumbSeparator className="hidden md:block" />
-									<BreadcrumbItem>
-										<BreadcrumbPage>Honor</BreadcrumbPage>
+										<BreadcrumbPage></BreadcrumbPage>
 									</BreadcrumbItem>
 								</BreadcrumbList>
 							</Breadcrumb>
 						</header>
 						<div className="flex flex-1 flex-col gap-4 p-4 pt-0">
 							<div className="grid auto-rows-min gap-4 md:grid-cols-1">
-								<div className="rounded-xl bg-muted/80 p-8 h-auto max-h-[80vh] h-full">
+								<div className="rounded-xl  p-8 h-auto max-h-[80vh] h-full">
 									{children}
 								</div>
 							</div>
